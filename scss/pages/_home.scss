@@ -1,0 +1,19 @@
+/* award wining section */
+.award-wining {
+  padding: 90px 0 350px;
+  background: url('../../images/plane.png') no-repeat;
+  background-size: contain!important;
+}
+
+/* services */
+.services {
+  .ocean-bg {
+    background: url('../../images/ocean-bg.jpg');
+    height: 900px;
+    margin-top: -230px;
+    z-index: -1;
+    
+    @extend %edge-top;
+    @extend %edge-bottom;
+  }
+}

@@ -27,21 +27,28 @@
 
 /* General styles /////////////////////////////////////////////////// */
 /* overriding some reboot styles */
+html, body {
+    color: theme-color('secondary');
+}
 ol, ul, dl, p {
     margin-bottom: 0;
     padding: 0;
 }
-
 li {
     list-style: none;
 }
-
 h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
 }
 
-// Componenets
+// Helpers /////////////////////////////////////////////////////////////
+@import 'helpers/extends';
+
+// Componenets /////////////////////////////////////////////////////////
 @import "components/scroll-to-top";
+@import "components/header";
+@import "components/fonts";
+@import "components/buttons";
 
-/* index page styles //////////////////////////////////////////////////////// */
-
+// Pages ///////////////////////////////////////////////////////////////
+@import "pages/home";

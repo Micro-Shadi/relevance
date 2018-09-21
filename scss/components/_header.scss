@@ -1,0 +1,64 @@
+/* Header styles */
+.intro {
+  background-size: cover!important;
+  background-position: center!important;
+  padding-top: 25px;
+  position: relative;
+  &:after {
+    @extend %pseudo-content;
+    background: transparentize(#5e6a81, 0.3);
+    @supports (mix-blend-mode: multiply){
+      background: linear-gradient(#b4bac5, #5e6a81);
+      mix-blend-mode: multiply;
+    }
+  }
+  .intro-content {
+    position: relative;
+    z-index: 1;
+  }
+
+  .navbar-nav .nav-link {
+    font-family: $futura-font;
+    font-weight: normal!important;
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+
+  .intro-text {
+    padding: 250px 0 0;
+    
+    h2 {
+      font-family: $header-font;
+      font-weight: normal;
+      font-size: 40px;
+      letter-spacing: 8px;
+      span {
+        font-size: 70px;
+        letter-spacing: 15px;
+      }
+    }
+
+    .experts {
+      h3 {
+        display: inline-block;
+        font-family: $akizden-normal;
+        font-weight: normal;
+        transform: rotate(-90deg);
+        letter-spacing: 5px;
+      }
+
+      .page-break {
+        @extend %page-break;
+      }
+    }
+  }
+}
+
+.white-blade {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 250px;
+  margin-top: -250px;
+  @extend %edge-bottom;
+}
