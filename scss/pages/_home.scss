@@ -9,6 +9,8 @@
 .services {
   .ocean-bg {
     background: url('../../images/ocean-bg.jpg');
+    background-size: cover;
+    background-position: center;
     height: 900px;
     margin-top: -230px;
     z-index: -1;
