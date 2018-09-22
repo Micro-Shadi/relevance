@@ -1,7 +1,5 @@
 /* Header styles */
 .intro {
-  background-size: cover!important;
-  background-position: center!important;
   padding-top: 25px;
   position: relative;
   &:after {
@@ -61,4 +59,26 @@
   height: 250px;
   margin-top: -250px;
   @extend %edge-bottom;
+}
+
+.intro-layer {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.intro-layer .layer{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../../images/intro-layer.png') no-repeat;
+  background-size: cover;
+  background-position: center;
 }

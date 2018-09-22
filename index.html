@@ -20,13 +20,14 @@
 </head>
 
 <body>
-  <!-- scroll to top button -->
-  <div id="stop" class="scrollTop">
-    <span class="fa fa-chevron-up" data-toggle="tooltip" data-placement="top" title="Scroll to top"></span>
-  </div>
   
   <!-- Header & intro /////////////////////////////////////////////////////////////////////////////// -->
-  <div class="intro" style="background: url('images/home-intro-bg.jpg');">
+  <div class="intro">
+    <div class="intro-layer" id="scene">
+      <div class="layer" style="background: url('images/intro-layer-bg.jpg');"></div>
+      <div class="layer" data-depth="0.3" style="background: url('images/intro-layer2.png');"></div>
+      <div class="layer" data-depth="0.15" style="background: url('images/intro-layer.png');"></div>
+    </div>
     <div class="intro-content">
 
       <!-- Navigation -->
@@ -80,7 +81,7 @@
           </div>
         </div>
       </div>
-
+      
     </div> <!-- //End intro content -->
   </div> <!-- //End intro -->
   <div class="white-blade"></div>
@@ -111,9 +112,10 @@
 
 
 
-
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="js/vendor/parallax.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script> --> 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
   <script src="js/vendor/bootstrap.min.js"></script>
