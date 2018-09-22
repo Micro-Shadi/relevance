@@ -1,8 +1,13 @@
 /* award wining section */
 .award-wining {
-  padding: 90px 0 350px;
-  background: url('../../images/plane.png') no-repeat;
-  background-size: contain!important;
+  // padding: 90px 0 350px;
+
+  .plane img{
+    position: absolute;
+    max-width: 1000px;
+    margin-left: -300px;
+    animation: float 2.5s infinite;
+  }
 }
 
 /* services */

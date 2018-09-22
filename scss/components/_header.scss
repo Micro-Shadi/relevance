@@ -25,15 +25,17 @@
   .intro-text {
     padding: 250px 0 0;
     
-    h2 {
+    h2.intro-h-top {
       font-family: $header-font;
       font-weight: normal;
       font-size: 40px;
       letter-spacing: 8px;
-      span {
-        font-size: 70px;
-        letter-spacing: 15px;
-      }
+    }
+    h2.intro-h-bottom {
+      font-family: $header-font;
+      font-weight: normal;
+      font-size: 70px;
+      letter-spacing: 15px;
     }
 
     .experts {
@@ -79,7 +81,6 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('../../images/intro-layer.png') no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-size: cover!important;
+  background-position: center!important;
 }
