@@ -1,0 +1,67 @@
+/* footer styles */
+.footer {
+  .footer-car {
+    position: relative;
+    z-index: 4;
+  }
+  .footer-bg {
+    margin-top: -280px;
+    @extend %edge-top;
+    padding-top: 350px;
+    &:before {
+      z-index: 3;
+    }
+    position: relative;
+    background: url('../images/footer-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    
+    .container {
+      position: relative;
+      z-index: 2;
+    }
+
+    &:after {
+      @extend %pseudo-content;
+      background: rgba(0, 0, 0, 0.75);
+    }
+
+    .address, .contact, .socials {
+      h3 {
+        font-size: 11px;
+        letter-spacing: 1px;
+        line-height: 2.5;
+        color: #5e6a81;
+      }
+      p, a {
+        font-size: 11px;
+        line-height: 2.5;
+        color: #959595;
+        letter-spacing: 1px;
+      }
+    }
+
+    .socials li {
+      display: inline-block;
+      margin-right: 25px;
+      a {
+        font-size: 20px;
+      }
+      .fa-facebook {
+        color: #3460a1;
+      }
+      .fa-twitter {
+        color: #28aae1;
+      }
+      .fa-instagram {
+        color: #f47321;
+      }
+    }
+
+    .rights {
+      font-size: 11px;
+      color: #959595;
+      letter-spacing: 1px;
+    }
+  }
+}

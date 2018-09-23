@@ -303,3 +303,44 @@ h2.case-studies-header {
     letter-spacing: 4px;
   }
 }
+
+/* qoute */
+.qoutes {
+
+  .qoute-img {
+    background-size: cover!important;
+    background-position: center!important;
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+  }
+  .qoute-bold {
+    font-family: $akizden-bold;
+    letter-spacing: 2px;
+    font-size: 24px;
+  }
+  .fa.fa-quote-left {
+    display: block;
+    font-size: 130px;
+    color: transparentize(theme-color('primary'), 0.8);
+    position: relative;
+    margin: 30px auto -120px;
+    z-index: -1;
+  }
+  .qoute-text {
+    font-size: 14px;
+    color: #959595;
+  }
+  .name {
+    font-family: $akizden-bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #959595;
+  }
+  .page-break {
+    @extend %page-break;
+    margin: 0 auto;
+    height: 60px;
+    top: 0;
+  }
+}
