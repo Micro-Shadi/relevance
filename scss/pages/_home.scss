@@ -78,10 +78,228 @@
 }
 
 /* Case Studies section */
+h2.case-studies-header {
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-family: $akizden-bold;
+}
 .case-studies {
-  h2 {
-    font-size: 20px;
-    letter-spacing: 2px;
+  position: relative;
+  height: 670px;
+}
+
+.tiles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.tile {
+  position: relative;
+  float: left;
+  width: 33.333%;
+  height: 100%;
+  overflow: hidden;
+
+  .case-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.25s;
+
+    h2 {
+      font-size: 32px;
+      font-family: $akizden-bold;
+      font-weight: normal;
+      letter-spacing: 2px; 
+      text-align: center;
+      transform: translateY(-15px);
+      transition: all 0.25s;
+    }
+    p.view {
+      position: relative;
+      font-family: $akizden-bold;
+      font-size: 18px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: theme-color('primary');
+      margin: 180px 0;
+
+      &:after, &:before {
+        content: '';
+        position: absolute;
+        top: 65px;
+        left: calc(50% - 2px);
+        display: block;
+        width: 2px;
+        height: 0;
+        background: theme-color('primary');
+        transition: all 0.75s;
+      }
+      &:after {
+        top: auto;
+        bottom: 65px;
+      }
+    }
+    p.service {
+      margin-top: 40px;
+      font-family: $akizden-normal;
+      font-size: 32px;
+      text-transform: uppercase;
+      transform: rotate(-90deg) translateX(-15px);
+      transition: all 0.25s;
+    }
+  }
+
+  .hover-overlay {
+    @extend %pseudo-content;
+    background: transparentize(theme-color('secondary'), 0.3);
+    @supports (mix-blend-mode: multiply) {
+      background: theme-color('secondary');
+      mix-blend-mode: multiply;
+    }
+    z-index: 2;
+    opacity: 0;
+    transition: all 0.25s;
+  }
+
+  
+  &:hover {
+    .hover-overlay {
+      opacity: 1;
+    }
+
+    .case-text {
+      opacity: 1;
+      
+      h2 {
+        transform: translateY(0);
+      }
+      p.view {
+        &:after, &:before {
+          height: 90px;
+        }
+      }
+      p.service {
+        transform: rotate(-90deg) translateX(0);
+      }
+    }
+  }
+
+  @include media-breakpoint-down(sm){
+    width: 100%;
+  }
+}
+
+.photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: transform .5s ease-out;
+}
+
+.txt {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  bottom: 10%;
+  left: 0;
+  font-family: 'Roboto Slab', serif;
+  font-size: 9px;
+  line-height: 12px;
+  text-align: center;
+  cursor: default;
+}
+
+.x {
+  font-size: 32px;
+  line-height: 32px;
+}
+
+/* Latest News */
+.latest-news-header {
+  font-family: $akizden-bold;
+  font-size: 115px;
+  letter-spacing: 15px;
+  margin: 0;
+  position: relative;
+  margin-bottom: -37px;
+}
+.latest-news {
+  .post {
+    background-size: cover!important;
+    background-position: center!important;
+    display: block;
+    height: 415px;
+    text-decoration: none;
+
+    &:after {
+      @extend %pseudo-content;
+      background: linear-gradient( transparent, transparentize(#04394b, 0.13));
+      @supports (mix-blend-mode: multiply) {
+        mix-blend-mode: multiply;
+      }
+    }
+    .flex-item {
+      position: relative;
+      z-index: 2;
+    }
+    .post-header {
+      font-family: $akizden-bold;
+      font-size: 32px;
+      letter-spacing: 5px;
+      font-weight: normal;
+      color: #fff;
+    }
+    .date {
+      font-family: $akizden-bold;
+      text-transform: uppercase;
+      font-size: 14px;
+      letter-spacing: 3px;
+      color: #c8a82c;
+    }
+    .post-text {
+      color: #fff;
+      font-size: 12px;
+      margin-top: 20px;
+    }
+    .read-more {
+      font-family: $akizden-bold;
+      text-transform: uppercase;
+      font-size: 12px;
+      color: #c8a82c;
+      margin-top: 20px;
+
+      span {
+        font-size: 10px;
+        position: relative;
+        bottom: 1px;
+      }
+    }
+  }
+}
+
+/* work with us */
+.work-with-us {
+  h3 {
     font-family: $akizden-bold;
+    font-size: 28px;
+    letter-spacing: 4px;
   }
 }
