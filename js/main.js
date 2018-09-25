@@ -28,6 +28,12 @@ ScrollReveal().reveal('.letters-animation .letter', {
   interval: 30,
   distance: '500px'
 });
+ScrollReveal().reveal('.services-header', {
+  beforeReveal: function () {
+      $('.services-header').addClass('block-reveal');
+  }
+});
+
 
 /* case studies section/tiles */
 
@@ -53,15 +59,7 @@ $('.tile')
     .children('.photo').css({'background-image': 'url('+ $(this).attr('data-image') +')'});
 });
 
-/*
-ScrollReveal().reveal('.letters-animation .letter', {
-  interval: 30,
-  distance: '50px',
-  beforeReveal: function () {
-      $('.letters-animation').addClass('letters-animate');
-  }
-});
-*/
+
 
 
 

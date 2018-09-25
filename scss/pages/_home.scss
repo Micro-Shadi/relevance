@@ -52,13 +52,23 @@
       margin-top: -870px;
     }
   }
-  h2 {
+
+  .services-header {
     display: inline-block;
-    font-size: 20px;
-    letter-spacing: 2px;
-    background: #0d1117;
-    color: #fff;
-    margin: 0 auto;
+    overflow: hidden;
+    h2 {
+      display: inline-block;
+      font-size: 20px;
+      letter-spacing: 2px;
+      background: #0d1117;
+      color: #fff;
+      margin: 0 auto;
+      transform: translate(0, 100%);
+      transition: all 0.5s ease-in-out;
+    }
+  }
+  .services-header.block-reveal h2 {
+    transform: translate(0, 0);
   }
   .page-break2 {
     @extend %page-break;
