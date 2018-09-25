@@ -93,3 +93,19 @@
     }
   }
 }
+
+.car-wheel:after {
+  content: ' ';
+  display: block;
+  width: 36%;
+  height: 62%;
+  border-radius: 100%;
+  background: url('../images/wheel.png');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  right: 15%;
+  top: 38%;
+
+  animation: 20s infinite-rotation infinite linear;
+}
