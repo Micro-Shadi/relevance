@@ -23,6 +23,7 @@ $('.lettering').each(function(){
 
 
 // scroll reveal
+ScrollReveal().reveal('.scroll-fade');
 ScrollReveal().reveal('.letters-animation .letter', {
   interval: 30,
   distance: '500px'
@@ -98,6 +99,7 @@ $(document).ready(function () {
   });
 });
 
+/* sticky navbar */
 $(function () {
   var lastScrollTop = 0;
   var $navbar = $('.navbar');
