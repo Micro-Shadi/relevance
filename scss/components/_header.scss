@@ -12,14 +12,32 @@
   }
   .intro-content {
     position: relative;
-    z-index: 1;
+    z-index: 1000;
   }
 
+  .navbar-nav li:last-child .nav-link:after {
+    display: none;
+  }
   .navbar-nav .nav-link {
     font-family: $futura-font;
     font-weight: normal!important;
     font-size: 12px;
     letter-spacing: 2px;
+
+    &:after {
+      content: '';
+      display: inline-block;
+      width: 2px;
+      height: 1px;
+      background: theme-color('secondary');
+      position: relative;
+      bottom: 5px;
+      left: 9px
+    }
+  }
+  .french-flag {
+    position: relative;
+    bottom: 2px;
   }
 
   .intro-text {
@@ -83,4 +101,29 @@
   height: 100%;
   background-size: cover!important;
   background-position: center!important;
+}
+
+/*sticky header position*/
+.header {
+  position: relative;
+  z-index: 2;
+}
+.header .sticky.is-sticky {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  background: #000;
+  transition: all 0.25s;
+}
+
+/* nav hover animation */
+.nav-link {
+  span {
+    display: inline-block;
+    transition: all 0.25s;
+    transform: rotate3d(0);
+  }
+
 }
