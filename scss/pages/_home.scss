@@ -11,6 +11,13 @@
     max-width: 1000px;
     margin-left: -300px;
     animation: float 2.5s infinite;
+    @include media-breakpoint-down(md){
+      width: 100%;
+      margin: 0 auto;
+    }
+    @include media-breakpoint-down(sm){
+      width: 60%;
+    }
   }
 }
 
@@ -23,6 +30,9 @@
     height: 900px;
     margin-top: -230px;
     z-index: -1;
+    @include media-breakpoint-down(md){
+      margin-top: 0;
+    }
     
     @extend %edge-top;
     @extend %edge-bottom;
@@ -35,6 +45,12 @@
     top: 0;
     margin-top: -825px;
     z-index: -1;
+    @include media-breakpoint-down(md){
+      height: 100px;
+    }
+    @include media-breakpoint-down(sm){
+      margin-top: -870px;
+    }
   }
   h2 {
     display: inline-block;
@@ -50,6 +66,9 @@
     height: 110px;
     top: 0;
     z-index: 2;
+    @include media-breakpoint-down(md){
+      height: 100px;
+    }
   }
 }
 
@@ -58,6 +77,12 @@
 .services-more {
   position: relative;
   margin-top: -100px;
+  @include media-breakpoint-down(lg){
+    margin-top: -50px;
+  }
+  @include media-breakpoint-down(sm){
+    margin-top: 0;
+  }
 
   .page-break3 {
     @extend %page-break;
@@ -86,22 +111,33 @@ h2.case-studies-header {
 .case-studies {
   position: relative;
   height: 670px;
+  @include media-breakpoint-down(lg){
+    height: auto;
+  }
 }
 
 .tiles {
-  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
 }
 
 .tile {
   position: relative;
-  float: left;
-  width: 33.333%;
-  height: 100%;
+  flex:0 0 33.33%;
+  height: 670px;
   overflow: hidden;
+  
+  @include media-breakpoint-down(sm) {
+    flex:0 0 90%;
+    margin: 0 auto 15px;
+    float: none;
+    text-align: center;
+    height: 450px;
+  }
 
   .case-text {
     position: absolute;
@@ -135,6 +171,9 @@ h2.case-studies-header {
       letter-spacing: 1px;
       color: theme-color('primary');
       margin: 180px 0;
+      @include media-breakpoint-down(lg){
+        margin: 70px 0;
+      }
 
       &:after, &:before {
         content: '';
@@ -146,10 +185,16 @@ h2.case-studies-header {
         height: 0;
         background: theme-color('primary');
         transition: all 0.75s;
+        @include media-breakpoint-down(lg){
+          top: 35px;
+        }
       }
       &:after {
         top: auto;
         bottom: 65px;
+        @include media-breakpoint-down(lg){
+          bottom: 35px;
+        }
       }
     }
     p.service {
@@ -189,16 +234,15 @@ h2.case-studies-header {
       p.view {
         &:after, &:before {
           height: 90px;
+          @include media-breakpoint-down(lg){
+            height: 25px;
+          }
         }
       }
       p.service {
         transform: rotate(-90deg) translateX(0);
       }
     }
-  }
-
-  @include media-breakpoint-down(sm){
-    width: 100%;
   }
 }
 
@@ -240,6 +284,11 @@ h2.case-studies-header {
   margin: 0;
   position: relative;
   margin-bottom: -37px;
+  @include media-breakpoint-down(md) {
+    font-size: 45px;
+    margin-bottom: -14px;
+    letter-spacing: 10px;
+  }
 }
 .latest-news {
   .post {
@@ -261,11 +310,35 @@ h2.case-studies-header {
       z-index: 2;
     }
     .post-header {
+      position: relative;
+      bottom: 0;
       font-family: $akizden-bold;
       font-size: 32px;
       letter-spacing: 5px;
       font-weight: normal;
       color: #fff;
+      transition: all 0.25s;
+      @include media-breakpoint-down(md) {
+        font-size: 22px;
+      }
+
+      &:after {
+        content: '';
+        display: block;
+        margin-top: 10px;
+        height: 2px;
+        width: 0;
+        background: #fff;
+        opacity: 0;
+        transition: all 0.25s;
+      }
+    }
+    &:hover .post-header {
+      bottom: 15px;
+      &:after {
+        width: 50%;
+        opacity: 1;
+      }
     }
     .date {
       font-family: $akizden-bold;
@@ -301,6 +374,9 @@ h2.case-studies-header {
     font-family: $akizden-bold;
     font-size: 28px;
     letter-spacing: 4px;
+    @include media-breakpoint-down(md) {
+      font-size: 22px;
+    }
   }
 }
 

@@ -42,18 +42,27 @@
 
   .intro-text {
     padding: 250px 0 0;
+    @include media-breakpoint-down(md){
+      padding: 100px 0 0;
+    }
     
     h2.intro-h-top {
       font-family: $header-font;
       font-weight: normal;
       font-size: 40px;
       letter-spacing: 8px;
+      @include media-breakpoint-down(md){
+        font-size: 25px;
+      }
     }
     h2.intro-h-bottom {
       font-family: $header-font;
       font-weight: normal;
       font-size: 70px;
       letter-spacing: 15px;
+      @include media-breakpoint-down(md){
+        font-size: 35px;
+      }
     }
 
     .experts {
@@ -63,6 +72,9 @@
         font-weight: normal;
         transform: rotate(-90deg);
         letter-spacing: 5px;
+        @include media-breakpoint-down(md){
+          transform: none;
+        }
       }
 
       .page-break {
@@ -107,6 +119,13 @@
 .header {
   position: relative;
   z-index: 2;
+
+  .navbar-brand {
+    transition: all 0.25s!important;
+    img {
+      transition: all 0.25s!important;
+    }
+  }
 }
 .header .sticky.is-sticky {
   position: fixed;
@@ -116,14 +135,26 @@
   width: 100%;
   background: #000;
   transition: all 0.25s;
+
+  .navbar-brand {
+    width: 127px;
+
+    img {
+      width: 100%;
+    }
+  }
 }
 
 /* nav hover animation */
 .nav-link {
-  span {
-    display: inline-block;
-    transition: all 0.25s;
-    transform: rotate3d(0);
+  transition: all 0.25s;
+  &:hover {
+    color: theme-color('primary')!important;
   }
+}
 
+.navbar-collapse {
+  @include media-breakpoint-down(md) {
+    margin-top: 20px;
+  } 
 }

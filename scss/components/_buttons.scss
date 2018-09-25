@@ -8,6 +8,9 @@
   letter-spacing: 1px;
   border: none;
   position: relative;
+  @include media-breakpoint-down(md){
+    font-size: 16px;
+  }
   
   &:after {
     @extend %pseudo-content;
@@ -41,6 +44,10 @@
 .btn-outline-primary.btn-sm {
   font-size: 18px;
   padding: 12px 60px;
+  @include media-breakpoint-down(md){
+    padding: 12px 30px;
+    font-size: 16px;
+  }
 }
 
 .btn-primary {
