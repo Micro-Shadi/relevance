@@ -10,13 +10,3 @@
 		transform: translatey(0px);
 	}
 }
-
-// cars wheel infinite rotation
-@keyframes infinite-rotation {
-	from {
-		transform: rotate(0);
-	}
-	to {
-		transform: rotate(-360deg);
-	}
-}
