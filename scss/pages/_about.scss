@@ -1,0 +1,100 @@
+.h1-about-us {
+  font-family: $akizden-bold;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+.services-about {
+  .ocean-bg {
+    margin-top: 0;
+  }  
+}
+
+.award-wining {
+  .intro-parag {
+    font-family: $akizden-bold;
+    font-size: 32px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    line-height: normal;
+  }
+}
+
+.shout-out {
+
+  .overlay-wrapper {
+    position: relative;
+  }
+  
+  .ocean-bg {
+    height: 670px;
+    background: url('../images/shout-out-bg.jpg');
+    @include media-breakpoint-down(sm){
+      height: 450px;
+    }
+
+    &:before {
+      z-index: 1;
+    }
+
+    h3 {
+      span:first-child {
+        font-family: $akizden-bold;
+        font-size: 117px;
+        letter-spacing: 6px;
+        @include media-breakpoint-down(sm){
+          font-size: 65px;
+        }
+      }
+      span:last-child {
+        font-family: $akizden-bold;
+        font-size: 37px;
+        letter-spacing: 2px;
+        @include media-breakpoint-down(sm){
+          font-size: 20px;
+        }
+      }
+      &:after {
+        @extend %pseudo-content;
+        background: linear-gradient(#12597c, #003048);
+        opacity: 0.6;
+        z-index: -1;
+
+        @supports(mix-blend-mode: multiply) {
+          mix-blend-mode: multiply;
+        }
+      }
+    }
+  }
+}
+
+.award-wining {
+  span {
+    font-size: 4px;
+  }
+  li {
+    margin-bottom: 10px;
+    p {
+      display: inline-block;
+      margin-left: 5px;
+      font-size: 14px;
+    }
+  }
+}
+
+.qoutes-carousel .carousel-control-prev-icon {
+  &:after {
+    content: '\f053';
+    font-family: 'FontAwesome';
+    font-size: 28px;
+    color: #000;
+  }
+}
+.qoutes-carousel .carousel-control-next-icon {
+  &:after {
+    content: '\f054';
+    font-family: 'FontAwesome';
+    font-size: 28px;
+    color: #000;
+  }
+}
