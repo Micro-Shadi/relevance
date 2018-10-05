@@ -1,0 +1,91 @@
+.service-intro-parag {
+  position: relative;
+  background: url('../images/flower-bg.png') no-repeat;
+  background-position: right top;
+  padding-top: 150px;
+  margin-top: -150px!important;
+  @include media-breakpoint-down(sm){
+    background: none;
+  }
+  
+  h3 {
+    font-family: $akizden-bold;
+    font-size: 32px;
+    letter-spacing: 3px;
+  }
+  p {
+    font-size: 18px;
+  }
+}
+
+.services-section {
+  position: relative;
+
+  .service-img {
+    background-size: cover!important;
+    background-position: center!important;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  .service-item {
+    position: relative;
+    height: 650px;
+    @include media-breakpoint-down(md) {
+      height: 450px;
+    }
+    @include media-breakpoint-down(sm) {
+      height: 300px;
+      margin: 0 15px 15px;
+    }
+
+    p {
+      display: flex;
+      position: relative;
+      font-family: $akizden-bold;
+      font-size: 38px;
+      letter-spacing: 6px;
+      width: 335px;
+      height: 115px;
+      line-height: normal;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      @include media-breakpoint-down(md) {
+        font-size: 26px;
+      }
+
+      &:before {
+        @extend %pseudo-content;
+        z-index: -1;
+        background: #c8a82c;
+
+        @supports(mix-blend-mode: multiply) {
+          mix-blend-mode: multiply;
+        }
+      }
+    }
+  }
+}
+
+.service-item-sm {
+  position: relative;
+  @include media-breakpoint-down(sm) {
+    margin: 0 15px 15px;
+  }
+}
+
+.flower-on-left {
+  background: url('../images/flower-bg2.png') no-repeat;
+  background-position: left bottom;
+  padding-bottom: 220px;
+  margin-bottom: -220px;
+
+  @include media-breakpoint-down(lg) {
+    background: none;
+  }
+}
