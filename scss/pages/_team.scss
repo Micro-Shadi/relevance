@@ -1,0 +1,148 @@
+.our-team {
+  h3 {
+    font-family: $akizden-bold;
+    font-size: 24px;
+    letter-spacing: 2px;
+  }
+  a.member {
+    display: block;
+    text-decoration: none;
+
+    .member-img {
+      position: relative;
+      width: 100%;
+      height: 270px;
+      overflow: hidden;
+
+      div {
+        background-size: cover!important;
+        background-position: center!important;
+        width: 100%;
+        height: 100%;
+        transition: all 3s;
+      }
+      &:before {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        content: '\f067';
+        font-family: 'fontawesome';
+        color: #fff;
+        font-size: 24px;
+        z-index: 2;
+        transform: scale(0.5);
+        opacity: 0;
+        transition: all 0.25s;
+      }
+      &:after {
+        @extend %pseudo-content;
+        background: transparentize(theme-color('primary'), 0.3);
+        @supports (mix-blend-mode: multiply) {
+          background: theme-color('primary');
+          mix-blend-mode: multiply;
+        }
+        opacity: 0;
+        transition: all 0.25s;
+      }
+    }
+    .member-info {
+      background: #272626;
+      transition: all 0.25s;
+      
+      p.name {
+        font-family: $akizden-bold;
+        font-size: 16px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+      p.job-title {
+        font-family: $akizden-normal;
+        font-size: 12px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+    }
+  } //hover
+  a.member:hover {
+    .member-img{
+      div {
+        transform: scale(1.1);
+      }
+      &:before {
+        opacity: 1;
+        transform: scale(1);
+      }
+      &:after {
+        opacity: 1;
+      }
+    }
+    .member-info {
+      background: #3a3939;
+    }
+  }
+}
+
+.team-quote {
+  span {
+    font-size: 28px;
+  }
+  p {
+    font-family: $akizden-bold;
+    font-size: 24px;
+    letter-spacing: 2px;
+  }
+  p.small {
+    font-family: $font-family-base;
+    font-size: 14px;
+    color: #888585;
+    letter-spacing: normal;
+  }
+}
+
+.work-for-revelance {
+  background: #d3d1d1;
+
+  .placeholder-person {
+    height: 270px;
+    width: 100%;
+
+    div {
+      background-size: cover!important;
+      background-position: top!important;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  h2 {
+    font-family: $akizden-bold;
+    font-size: 32px;
+    letter-spacing: 3px;
+  }
+
+  .btn-outline-secondary {
+    letter-spacing: 1px;
+  }
+
+  .text {
+    background: #3a3939;
+    transition: all 0.25s;
+    
+    p.name {
+      font-family: $akizden-bold;
+      font-size: 16px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    p.job-title {
+      font-family: $akizden-normal;
+      font-size: 12px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+  }
+}
