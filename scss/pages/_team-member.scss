@@ -1,0 +1,42 @@
+.member-info {
+  .about-member {
+    h3 {
+      font-family: $akizden-bold;
+      font-size: 16px;
+      letter-spacing: 2px;
+    }
+    p {
+      font-size: 14px;
+      color: #959595;
+    }
+  }
+
+  .member-info-bottom {
+    h3 {
+      font-family: $akizden-bold;
+      font-size: 16px;
+      letter-spacing: 2px;
+    }
+    .skills p {
+      font-family: $akizden-normal;
+      font-size: 18px;
+    }
+    a.email {
+      font-size: 14px;
+      color: #636363;
+      text-decoration: underline;
+    }
+    span.red-line {
+      &:after {
+        content: '';
+        display: inline-block;
+        position: relative;
+        bottom: 2px;
+        left: 4px;
+        width: 15px;
+        height: 6px;
+        background: #ce1126;
+      }
+    }
+  }
+}
