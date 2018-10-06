@@ -5,6 +5,9 @@
     height: auto;
     padding-bottom: 250px;
     z-index: 2;
+    @include media-breakpoint-down(md){
+      padding-bottom: 150px;
+    }
   }
 
   .ipad {
@@ -19,11 +22,15 @@
   }
   li p {
     display: inline;
-    font-family: $akizden-bold!important;
+    font-family: $akizden-normal!important;
     font-size: 18px;
     letter-spacing: 3px;
     font-weight: normal;
     text-transform: uppercase;
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.8);
+    @include media-breakpoint-down(md){
+      font-size: 14px;
+    }
   }
 }
 

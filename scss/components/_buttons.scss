@@ -71,4 +71,8 @@
   font-size: 24px;
   letter-spacing: 3px;
   border: 2px solid #959595;
+
+  @include media-breakpoint-down(md) {
+    font-size: 16px;
+  }
 }
