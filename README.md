@@ -8,4 +8,5 @@ https://micro-shadi.github.io/relevance/team.html <br>
 https://micro-shadi.github.io/relevance/team-member.html <br>
 https://micro-shadi.github.io/relevance/offices.html <br>
 https://micro-shadi.github.io/relevance/port-entry.html <br>
+https://micro-shadi.github.io/relevance/case-studies.html <br>
 https://micro-shadi.github.io/relevance/contact.html <br>

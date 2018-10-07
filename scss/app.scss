@@ -19,6 +19,7 @@
 @import "../node_modules/bootstrap/scss/buttons";
 @import "../node_modules/bootstrap/scss/type";
 @import "../node_modules/bootstrap/scss/bootstrap-grid";
+@import "../node_modules/bootstrap/scss/modal";
 
 @import "../node_modules/bootstrap/scss/utilities/text";
 
@@ -63,4 +64,5 @@ h1, h2, h3, h4, h5, h6 {
 @import "pages/team-member";
 @import "pages/offices";
 @import "pages/port-entry";
+@import "pages/case-studies";
 @import "pages/contact";
