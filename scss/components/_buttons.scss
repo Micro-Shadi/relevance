@@ -1,11 +1,12 @@
 .btn {
-  font-family: akizden-b;
+  font-family: $header-font;
   text-transform: uppercase;
+  font-weight: normal;
 }
 
 .btn-outline-primary {
   font-size: 22px;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
   border: none;
   position: relative;
   @include media-breakpoint-down(md){

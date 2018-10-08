@@ -315,6 +315,18 @@ h2.case-studies-header {
         mix-blend-mode: multiply;
       }
     }
+    &:before {
+      @extend %pseudo-content;
+      background: linear-gradient( transparent, transparentize(#04394b, 0.13));
+      @supports (mix-blend-mode: multiply) {
+        mix-blend-mode: multiply;
+      }
+      opacity: 0;
+      transition: all 0.25s;
+    } 
+    &:hover:before {
+      opacity: 1;
+    }
     .flex-item {
       position: relative;
       z-index: 2;
@@ -346,7 +358,7 @@ h2.case-studies-header {
     &:hover .post-header {
       bottom: 15px;
       &:after {
-        width: 50%;
+        width: 150px;
         opacity: 1;
       }
     }

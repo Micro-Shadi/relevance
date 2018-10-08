@@ -11,8 +11,8 @@ $font-size-base: 1rem;
 $font-family-base: 'Gentium Basic', serif;
 $header-font: futura-m;
 $futura-font: futura;
-$akizden-bold: akizden-b;
-$akizden-normal: akizden;
+$akizden-bold: futura-m;
+$akizden-normal: futura;
 $raleway: 'Raleway', sans-serif;
 $line-height-base: 1.4;
 $border-radius-base: 10px;
@@ -68,6 +68,6 @@ $input-transition: all .25s ease-in-out;
 /* Buttons */
 $btn-padding-y: 12px;
 $btn-padding-x: 60px;
-$btn-font-weight: bold;
+$btn-font-weight: normal;
 $btn-border-width: 2px;
 $btn-border-radius: 10px;
