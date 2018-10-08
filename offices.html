@@ -105,6 +105,42 @@
     <img src="images/map.jpg" class="img-fluid">
   </div>
 
+  <style>
+    /* Always set the map height explicitly to define the size of the div
+      * element that contains the map. */
+    #map {
+      height: 100%;
+      border: 1px solid #000;
+    }
+    /* Optional: Makes the sample page fill the window. */
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+
+  test
+  test
+  <script>
+    var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 8
+        });
+      }
+    
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkUOdZ5y7hMm0yrcCQoCvLwzdM6M8s5qk&amp&callback=initMap"
+  async defer></script>
+
+
+
+
+
+
+
   <!-- believe the best can be found -->
   <div class="offices-locations text-center mt-5">
     <div class="overlay-wrapper">
@@ -319,13 +355,7 @@
 
   <!-- Engines js -->
   <script>
-      var map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -34.397, lng: 150.644},
-          zoom: 8
-        });
-      }
+      
     </script>
 
 </body>
