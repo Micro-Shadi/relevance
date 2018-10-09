@@ -1,30 +1,146 @@
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
-  integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
-  crossorigin=""/>
-  <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
-  integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
-  crossorigin=""></script>
 </head>
-<body>
-  <p>test</p>
 
+<body>
+
+  <!-- styles -->
+
+  <!-- Styles -->
   <style>
-    #mapid { height: 180px; }
+    #chartdiv {
+      width: 100%;
+      height: 700px;
+    }
+
+    a[href*="http://www.amcharts"] {
+      display: none !important;
+    }
+
+    #chartdiv {
+      width: 100%;
+      height: 600px;
+      font-family: Verdana;
+      font-size: 11px;
+      background: #eee;
+    }
+
+    .ammapDescriptionWindow {
+      max-width: 250px;
+      background: rgba(255, 255, 255, 0.8);
+      padding: 10px;
+      border-radius: 4px;
+      border: 2px solid rgba(255, 255, 255, 1);
+    }
+
+    .ammapDescriptionTitle {
+      font-size: 13px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .ammapDescriptionText {
+      max-height: 200px;
+      overflow: auto;
+    }
+
+    .ammapDescriptionText img,
+    .ammapDescriptionText p {
+      max-width: 95%;
+    }
   </style>
 
-
-  <div id="mapid"></div>
-
-<script>var mymap = L.map('mapid').setView([51.505, -0.09], 13);</script>
-
+  
 
   
+
+  <!-- HTML -->
+  <div id="chartdiv"></div>
+
+<!-- Resources -->
+<script src="https://www.amcharts.com/lib/3/ammap.js"></script>
+<script src="https://www.amcharts.com/lib/3/maps/js/worldLow.js"></script>
+<!-- Chart code -->
+<script>
+  /**
+   * Define SVG path for target icon
+   */
+  var targetSVG =
+    "M40,0C26.191,0,15,11.194,15,25c0,23.87,25,55,25,55s25-31.13,25-55C65,11.194,53.807,0,40,0z M40,38.8c-7.457,0-13.5-6.044-13.5-13.5S32.543,11.8,40,11.8c7.455,0,13.5,6.044,13.5,13.5S47.455,38.8,40,38.8z";
+
+  /**
+   * Create the map
+   */
+  var map = AmCharts.makeChart("chartdiv", {
+    "type": "map",
+    "projection": "miller",
+    "imagesSettings": {
+      "rollOverColor": "#c6a526",
+      "rollOverScale": 1.2,
+      "selectedScale": 1.5,
+      "selectedColor": "#c6a526",
+      "color": "#c45614",
+    },
+
+    "areasSettings": {
+      "unlistedAreasColor": "#37414b",
+      "outlineThickness": 0.1
+    },
+
+    "dataProvider": {
+      "map": "worldLow",
+      "images": [{
+        "svgPath": targetSVG,
+        "zoomLevel": 5,
+        "scale": 0.5,
+        "title": "Vienna",
+        "color": "#c6a526",
+        "latitude": 48.2092,
+        "longitude": 16.3728,
+        "description": "<img style='width:100%' src='http://upload.wikimedia.org/wikipedia/commons/9/97/Palace_of_Westminster%2C_London_-_Feb_2007.jpg' /><p>London is the capital and most populous city of England and the United Kingdom. Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium. London's ancient core, the City of London, largely retains its 1.12-square-mile (2.9 km2) medieval boundaries and in 2011 had a resident population of 7,375, making it the smallest city in England. Since at least the 19th century, the term London has also referred to the metropolis developed around this core The bulk of this conurbation forms the Greater London administrative area (coterminous with the London region), governed by the Mayor of London and the London Assembly.</p>",
+        "descriptionWindowBottom": "100"
+
+      }, {
+        "svgPath": targetSVG,
+        "zoomLevel": 5,
+        "scale": 0.5,
+        "title": "Minsk",
+        "latitude": 53.9678,
+        "longitude": 27.5766,
+        "description": "<img style='width:100%' src='http://upload.wikimedia.org/wikipedia/commons/9/97/Palace_of_Westminster%2C_London_-_Feb_2007.jpg' /><p>London is the capital and most populous city of England and the United Kingdom. Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium. London's ancient core, the City of London, largely retains its 1.12-square-mile (2.9 km2) medieval boundaries and in 2011 had a resident population of 7,375, making it the smallest city in England. Since at least the 19th century, the term London has also referred to the metropolis developed around this core The bulk of this conurbation forms the Greater London administrative area (coterminous with the London region), governed by the Mayor of London and the London Assembly.</p>",
+        "descriptionWindowBottom": "100"
+      }, {
+        "svgPath": targetSVG,
+        "zoomLevel": 5,
+        "scale": 0.5,
+        "title": "Brussels",
+        "latitude": 50.8371,
+        "longitude": 4.3676,
+        "description": "<img style='width:100%' src='http://upload.wikimedia.org/wikipedia/commons/9/97/Palace_of_Westminster%2C_London_-_Feb_2007.jpg' /><p>London is the capital and most populous city of England and the United Kingdom. Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium. London's ancient core, the City of London, largely retains its 1.12-square-mile (2.9 km2) medieval boundaries and in 2011 had a resident population of 7,375, making it the smallest city in England. Since at least the 19th century, the term London has also referred to the metropolis developed around this core The bulk of this conurbation forms the Greater London administrative area (coterminous with the London region), governed by the Mayor of London and the London Assembly.</p>",
+        "descriptionWindowBottom": "100"
+      }]
+    },
+    "export": {
+      "enabled": false
+    }
+  });
+</script>
+
+
+
+
+
+
+
+  <!-- scripts -->
+
+
+
 </body>
+
 </html>

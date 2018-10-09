@@ -1,6 +1,5 @@
 /* Hexagon grid styles*/
 #hex-grid {
-  
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -44,8 +43,9 @@
   transition: all 0.25s;
 
   p {
-    font-family: $raleway;
-    font-weight: bold;
+    font-family: $header-font;
+    font-weight: normal;
+    letter-spacing: 3px;
     text-transform: uppercase;
     color: #fff;
     margin: 0;
