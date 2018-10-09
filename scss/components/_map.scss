@@ -1,8 +1,3 @@
-#chartdiv {
-  width: 100%;
-  height: 700px;
-}
-
 a[href*="http://www.amcharts"] {
   display: none !important;
 }
@@ -13,6 +8,10 @@ a[href*="http://www.amcharts"] {
   font-family: Verdana;
   font-size: 11px;
   background: #fff;
+
+  @include media-breakpoint-down(md){
+    height: 400px;
+  }
 }
 
 .ammapDescriptionWindow {
