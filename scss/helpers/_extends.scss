@@ -13,7 +13,8 @@
   overflow: hidden;
   &:after {
     content: '';
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     display: block;
     position: absolute;
     bottom: 0;
@@ -34,7 +35,8 @@
   overflow: hidden;
   &:before {
     content: '';
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     display: block;
     position: absolute;
     top: 0;
