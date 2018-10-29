@@ -18,8 +18,10 @@
     background: theme-color('primary');
     border-radius: 10px;
     z-index: -1;
-    transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
     opacity: 0;
+    -webkit-transition: all 0.25s;
     transition: all 0.25s;
   }
   &:before {
@@ -27,16 +29,20 @@
     border: 2px solid theme-color('secondary');
     border-radius: 10px;
     z-index: -1;
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: all 0.15s;
     transition: all 0.15s;
   }
   &:hover {
     &:after {
-      transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1);
       opacity: 1;
     }
     &:before {
-      transform: scale(0.75);
+      -webkit-transform: scale(0.75);
+              transform: scale(0.75);
       opacity: 0;
     }
   }
@@ -82,28 +88,54 @@
   position: relative;
   &:after {
     @extend %pseudo-content;
-    background: theme-color('secondary');
+    background: theme-color('primary');
     border-radius: 10px;
     z-index: -1;
-    transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
     opacity: 0;
+    -webkit-transition: all 0.25s;
     transition: all 0.25s;
   }
   &:before {
     @extend %pseudo-content;
     border-radius: 10px;
     z-index: -1;
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: all 0.15s;
     transition: all 0.15s;
   }
   &:hover {
+    border-color: theme-color('primary');
+    background: none;
     &:after {
-      transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1);
       opacity: 1;
     }
     &:before {
-      transform: scale(0.75);
+      -webkit-transform: scale(0.75);
+              transform: scale(0.75);
       opacity: 0;
+    }
+  }
+}
+
+// services btn
+.services-btn {
+  text-decoration: none;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  p {
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+  }
+  &:hover {
+    text-decoration: none;
+
+    p {
+      background: theme-color('primary');
     }
   }
 }
