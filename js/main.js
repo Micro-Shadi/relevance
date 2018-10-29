@@ -173,30 +173,49 @@ var map = AmCharts.makeChart("chartdiv", {
       "svgPath": targetSVG,
       "zoomLevel": 5,
       "scale": 0.5,
-      "title": "Vienna",
+      "title": "Relevance Poland",
       "color": "#c6a526",
-      "latitude": 48.2092,
-      "longitude": 16.3728,
-      "description": "<img style='width:100%' src='http://upload.wikimedia.org/wikipedia/commons/9/97/Palace_of_Westminster%2C_London_-_Feb_2007.jpg' /><p>London is the capital and most populous city of England and the United Kingdom. Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium. London's ancient core, the City of London, largely retains its 1.12-square-mile (2.9 km2) medieval boundaries and in 2011 had a resident population of 7,375, making it the smallest city in England. Since at least the 19th century, the term London has also referred to the metropolis developed around this core The bulk of this conurbation forms the Greater London administrative area (coterminous with the London region), governed by the Mayor of London and the London Assembly.</p>",
+      "latitude": 52.83154490872976,
+      "longitude": 19.40880787499998,
+      "description": "<p>Stanisława Augusta 75/30,<br> 03-846 Warsaw, Poland<br><br> <a href='tel:+3493173051' class='text-dark'>+48221244200</a><br><a href='mailto:warsaw@relevanceweb.com' class='text-dark'>warsaw@relevanceweb.com</a><br></p>",
       "descriptionWindowBottom": "100"
 
     }, {
       "svgPath": targetSVG,
       "zoomLevel": 5,
       "scale": 0.5,
-      "title": "Minsk",
-      "latitude": 53.9678,
-      "longitude": 27.5766,
-      "description": "<img style='width:100%' src='http://upload.wikimedia.org/wikipedia/commons/9/97/Palace_of_Westminster%2C_London_-_Feb_2007.jpg' /><p>London is the capital and most populous city of England and the United Kingdom. Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium. London's ancient core, the City of London, largely retains its 1.12-square-mile (2.9 km2) medieval boundaries and in 2011 had a resident population of 7,375, making it the smallest city in England. Since at least the 19th century, the term London has also referred to the metropolis developed around this core The bulk of this conurbation forms the Greater London administrative area (coterminous with the London region), governed by the Mayor of London and the London Assembly.</p>",
+      "title": "Relevance Paris",
+      "latitude": 48.85661400000001,
+      "longitude": 2.6598390875000177,
+      "description": "<p>10 Place Vendôme, <br>Paris, 75001, France<br><br> <a href='tel:+3493173051' class='text-dark'>+33 1 85 15 13 64</a><br><a href='mailto:milan@relevanceweb.com' class='text-dark'>paris@relevanceweb.com</a><br></p>",
       "descriptionWindowBottom": "100"
     }, {
       "svgPath": targetSVG,
       "zoomLevel": 5,
       "scale": 0.5,
-      "title": "Brussels",
-      "latitude": 50.8371,
-      "longitude": 4.3676,
-      "description": "<img style='width:100%' src='http://upload.wikimedia.org/wikipedia/commons/9/97/Palace_of_Westminster%2C_London_-_Feb_2007.jpg' /><p>London is the capital and most populous city of England and the United Kingdom. Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium. London's ancient core, the City of London, largely retains its 1.12-square-mile (2.9 km2) medieval boundaries and in 2011 had a resident population of 7,375, making it the smallest city in England. Since at least the 19th century, the term London has also referred to the metropolis developed around this core The bulk of this conurbation forms the Greater London administrative area (coterminous with the London region), governed by the Mayor of London and the London Assembly.</p>",
+      "title": "Relevance Italy",
+      "latitude": 43.45291889355471,
+      "longitude": 12.744140625,
+      "description": "<p>Via Monte di Pietà 21, <br>Centro Montenapoleone,<br> 20121 Milano MI, Italy<br><br> <a href='tel:+3493173051' class='text-dark'>+39 02 9920 0027</a><br><a href='mailto:milan@relevanceweb.com' class='text-dark'>milan@relevanceweb.com</a><br></p>",
+      "descriptionWindowBottom": "100"
+    }, {
+      "svgPath": targetSVG,
+      "zoomLevel": 5,
+      "scale": 0.5,
+      "title": "Partner Stolk",
+      "latitude": 67.74275906666392,
+      "longitude": 20.654296875,
+      "description": "<p>Zurich World Trade Centre, <br>The World Trade Center,<br> Leutschenbachstrasse 95,<br> Zurich 8050, Switzerland<br><br> <a href='tel:+3493173051' class='text-dark'>+34 931 730 051</a><br><a href='mailto:barcelona@relevanceweb.com' class='text-dark'>barcelona@relevanceweb.com</a><br></p>",
+      "descriptionWindowBottom": "100"
+    }, {
+      "svgPath": targetSVG,
+      "zoomLevel": 5,
+      "scale": 0.5,
+      "color": "#c6a526",
+      "title": "Relevance Fort Lauderdale",
+      "latitude": 27.683528083787834,
+      "longitude": -81.650390625,
+      "description": "<p>Relevance Fort Lauderdale <br>Suite 1700, Fort Lauderdale,<br> Florida, 33301<br><br> <a href='tel:+3493173051' class='text-dark'>+1 (754) 200-0634</a><br><a href='mailto:fortlauderdale@relevanceweb.com' class='text-dark'>fortlauderdale@relevanceweb.com</a><br></p>",
       "descriptionWindowBottom": "100"
     }]
   },
