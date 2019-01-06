@@ -458,7 +458,7 @@ h2.case-studies-header {
     &:after {
       @extend %pseudo-content;
       background: linear-gradient( transparent, #2c0b47);
-      width: 101%;
+      width: 100.1%;
       @supports (mix-blend-mode: multiply) {
         mix-blend-mode: multiply;
       }
