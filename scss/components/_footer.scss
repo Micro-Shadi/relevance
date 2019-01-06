@@ -12,9 +12,9 @@
       z-index: 3;
     }
     position: relative;
-    background: url('../images/footer-bg.jpg');
-    background-size: cover;
-    background-position: center;
+    background: url('../images/r-watermark-footer.png') no-repeat;
+    background-position: -37% -24%;
+    background-size: 650px 650px;
     @include media-breakpoint-down(md) {
       margin-top: -220px;
       padding-top: 300px;
@@ -34,62 +34,70 @@
 
     &:after {
       @extend %pseudo-content;
-      background: rgba(0, 0, 0, 0.75);
+      background: linear-gradient( to left, #050505, #050505, #2e1642);
+      z-index: -1;
+    }
+
+    h2 {
+      font: 20px kionaBold;
+      color: #fff;
+      letter-spacing: 3px;
+      margin-left: 50px;
+      @include media-breakpoint-down(md){
+        margin-left: 0;
+        margin-bottom: 30px;
+      }
     }
 
     .address, .contact, .socials {
       h3 {
         font-size: 11px;
+        font-family: kionaBold;
         letter-spacing: 1px;
         line-height: 2.5;
-        color: #5e6a81;
+        color: #5d2b86;
       }
       p, a {
-        font-size: 11px;
+        font-size: 10px;
+        font-family: proxima-reg;
         line-height: 2.5;
-        color: #959595;
+        color: #fff;
         letter-spacing: 1px;
       }
     }
 
     .socials li {
+      margin-top: 10px;
       display: inline-block;
-      margin-right: 20px;
-      margin-left: -15px;
+      margin-right: 12px;
       a {
         display: inline-block;
-        font-size: 20px;
-        width: 45px;
-        height: 45px;
-        line-height: 45px;
-        border-radius: 100%;
+        font-size: 16px;
+        width: 31px;
+        height: 31px;
+        line-height: 32px;
+        border-radius: 7px;
         transition: all 0.25s;
         text-align: center;
+        background: #fff;
+        color: #5d2b86;
         span {
           transition: all 0.25s;
         }
         &:hover {
-          background: rgba(255, 255, 255, 0.1);
+          background: #5d2b86;
           span {
             color: #fff!important;
           }
         }
       }
-      .fa-facebook {
-        color: #3460a1;
-      }
-      .fa-twitter {
-        color: #28aae1;
-      }
-      .fa-instagram {
-        color: #f47321;
-      }
     }
 
     .rights {
-      font-size: 11px;
-      color: #959595;
+      font-size: 9px;
+      color: #fff;
       letter-spacing: 1px;
+      padding-right: 30px;
     }
   }
 }

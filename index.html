@@ -11,6 +11,7 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"> -->
   <link rel="stylesheet" href="css/style.css">
 
@@ -25,8 +26,9 @@
   <div class="intro">
     <div class="intro-layer" id="scene">
       <div class="layer" style="background: url('images/intro-layer-bg.jpg');"></div>
-      <div class="layer" data-depth="0.3" style="background: url('images/intro-layer2.png');"></div>
       <div class="layer" data-depth="0.15" style="background: url('images/intro-layer.png');"></div>
+      <div class="layer" data-depth="0.3" style="background: url('images/intro-layer2.png');"></div>
+      <div class="layer watermark" data-depth="0.1" style="background: url('images/r-watermark.png');"></div>
     </div>
     <div class="intro-content">
       <!--top header-->
@@ -36,7 +38,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark" data-toggle="sticky-onscroll">
           <div class="container">
             <!-- logo -->
-            <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="relevance."></a>
+            <a class="navbar-brand" href="index.html"><p>RELEVANCE</p></a>
 
             <!-- toggle button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -50,24 +52,25 @@
                 <li class="nav-item active">
                   <a class="nav-link text-uppercase" href="index.html">Home</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item">
                   <a class="nav-link text-uppercase" href="index.html">About</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item">
                   <a class="nav-link text-uppercase" href="index.html">Academy</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item">
                   <a class="nav-link text-uppercase" href="index.html">Services</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item">
                   <a class="nav-link text-uppercase" href="index.html">Case Studies</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item">
                   <a class="nav-link text-uppercase" href="index.html">Contact</a>
                 </li>
-                <li class="nav-item active">
-                  <a class="nav-link french-flag" href="#"><img src="images/fre-flag.jpg" alt="french flag" data-toggle="tooltip"
-                      data-placement="right" title="French"></a>
+                <li class="nav-item lang">
+                  <a class="nav-link" href="#">EN</a>
+                  <span></span>
+                  <a class="nav-link" href="#">FR</a>
                 </li>
               </ul>
             </div>
@@ -85,7 +88,7 @@
             <a href="#" class="btn btn-outline-primary mt-4">Work with us</a>
           </div>
           <div class="col-12 text-center experts mb-3">
-            <h3 class="mb-0 mt-5 mt-lg-0 mb-lg-5">Experts in Luxury.</h3>
+            <h3 class="mb-0 mt-5 mt-lg-0 mb-lg-5"></h3>
             <div class="page-break"></div>
           </div>
         </div>
@@ -98,13 +101,12 @@
   <!-- Award wining -->
   <div class="row award-wining no-gutters align-items-base scroll-fade">
     <div id="scene2" class="col-md-6 plane">
-      <img src="images/plane2.png" data-depth="0.2">
+      <img src="images/plane.png" data-depth="0.2">
     </div>
-    <div class="col-md-4 col-9 mx-auto mx-md-0 mt-5">
+    <div class="col-md-5 col-9 mx-auto mx-md-0 mt-5">
       <div class="ml-0 ml-md-5 pl-0 pl-md-5 text-center text-md-left">
-        <h3 class="lettering letters-animation">Award Winning</h3>
-        <p class="mt-3 mb-3 mb-md-0">Award-winning digital marketing agency delivering powerful digital solutions
-          through a blend of strategy, content, design & technology.</p>
+        <h3><p class="lettering letters-animation">Award</p> <p class="b lettering letters-animation">Winning</p></h3>
+        <p class="text mt-3 mb-3 mb-md-0">Award-winning digital marketing agency delivering powerful digital solutions through a blend of strategy, content, design & technology. Award-winning digital marketing agency delivering powerful digital solutions through a blend of strategy, content, design & technology.</p>
       </div>
     </div>
   </div>
@@ -114,50 +116,58 @@
     <div class="ocean-bg"></div>
     <div class="page-break"></div>
     <div class="services-header my-5">
-      <h2 class="px-5 py-3 scroll-fade">Services</h2>
+      <h2 class="px-5 py-3"><p class="lettering letters-animation">Relevance</p><p class="b lettering letters-animation">Services</p></h2>
     </div>
-    <div class="page-break2"></div>
-    <div class="hex">
-      <ul id="hex-grid" class="clr">
-        <li>
-          <a href="#" class="hexagon">
-            <p>Consultancy</p>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="hexagon">
-            <p>Web Design</p>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="hexagon">
-            <p>Advertising</p>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="hexagon">
-            <p>Public Relations</p>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="hexagon">
-            <p>SEO</p>
-          </a>
-        </li>
-      </ul>
+    <!-- Services Carousel -->
+    <div class="container services-slider">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="owl-carousel">
+            <div class="item">
+              <a href="#" class="service-img" style="background: url('images/service-slider.jpg');">
+                <div class="hover-overlay"></div>
+                <p>VIEW SERVICE</p>
+              </a>
+              <div class="service-text">
+                <a href="#"><h3>CONSULTANCY</h3></a>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+              </div>
+            </div>
+            <div class="item">
+              <a href="#" class="service-img" style="background: url('images/service-slider2.jpg');">
+                <div class="hover-overlay"></div>
+                <p>VIEW SERVICE</p>
+              </a>
+              <div class="service-text">
+                <a href="#"><h3>web design</h3></a>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+              </div>
+            </div>
+            <div class="item">
+              <a href="#" class="service-img" style="background: url('images/service-slider3.jpg');">
+                <div class="hover-overlay"></div>
+                <p>VIEW SERVICE</p>
+              </a>
+              <div class="service-text">
+                <a href="#"><h3>advertising</h3></a>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    
   </div>
 
   <!-- more sercives -->
   <div class="container services-more">
     <div class="row justify-content-center">
       <div class="col-12 text-center">
-        <div class="page-break3"></div>
-        <a href="#" class="btn btn-outline-primary btn-sm my-4 scroll-fade">learn more about our services</a>
-        <div class="page-break3"></div>
+        <a href="#" class="btn btn-outline-primary btn-sm my-5 scroll-fade">learn more about our services</a>
       </div>
-      <div class="col-12 text-center my-5 pt-4">
-        <h2 class="lettering letters-animation">TITLE / SECTION HEADING</h2>
+      <div class="col-12 text-center my-5 pt-5">
+        <h2 class="lettering letters-animation">H2 TITLE / SECTION HEADING</h2>
       </div>
       <div class="col-md-5 px-4 scroll-fade">
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
@@ -179,8 +189,8 @@
   </div>
 
   <!-- Case Studies -->
-  <h2 class="case-studies-header text-center lettering letters-animation mt-5 pt-5">Case Studies</h2>
-  <div class="case-studies mt-4 pt-3">
+  <h2 class="case-studies-header text-center lettering letters-animation">Case Studies</h2>
+  <div class="case-studies mt-3 pt-3">
     <div class="tiles">
       <a href="#" class="tile" data-scale="1.1" data-image="images/case1.jpg">
         <div class="case-text text-light">
@@ -209,16 +219,40 @@
     </div>
   </div>
 
+  <!-- more sercives -->
+  <div class="container services-more mt-5">
+    <div class="row justify-content-center">
+      <div class="col-12 text-center my-5 pt-5">
+        <h2 class="lettering letters-animation">H2 TITLE / SECTION HEADING</h2>
+      </div>
+      <div class="col-md-5 px-4 scroll-fade">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+          industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+          electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+          Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+          Aldus PageMaker including versions of Lorem Ipsum.</p>
+      </div>
+      <div class="col-md-5 px-4 scroll-fade mt-4 mt-md-0">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+          industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+          electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+          Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+          Aldus PageMaker including versions of Lorem Ipsum.</p>
+      </div>
+    </div>
+  </div>
+
   <!-- Latest news -->
   <div class="row latest-news no-gutters">
-    <div class="col-12 text-center text-uppercase mt-5 pt-5">
-      <h2 class="latest-news-header lettering letters-animation">Latest News</h2>
+    <div class="col-12 text-center text-uppercase">
+      <h2 class="latest-news-header"><span class="lettering letters-animation">relevance</span><br><span class="b lettering letters-animation">News</span></h2>
     </div>
     <div class="col-md-4 col-11 mx-auto mb-2 mb-md-0">
       <a href="#" class="post d-flex align-items-end p-5" style="background: url('images/post1.jpg');">
         <div class="flex-item">
           <h3 class="post-header">relevance top 10 seo</h3>
-          <p class="date">august 1st 2018</p>
           <p class="post-text">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
             industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
@@ -232,7 +266,6 @@
       <a href="#" class="post d-flex align-items-end p-5" style="background: url('images/post2.jpg');">
         <div class="flex-item">
           <h3 class="post-header">relevance opens office in bath</h3>
-          <p class="date">august 1st 2018</p>
           <p class="post-text">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
             industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
@@ -246,7 +279,6 @@
       <a href="#" class="post d-flex align-items-end p-5" style="background: url('images/post3.jpg');">
         <div class="flex-item">
           <h3 class="post-header">relevance berths partnership project</h3>
-          <p class="date">august 1st 2018</p>
           <p class="post-text">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
             industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
@@ -259,15 +291,15 @@
   </div>
 
   <!-- Work with us -->
-  <div class="bg-secondary work-with-us py-4">
+  <div class="work-with-us py-4">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-md-6 text-light text-center text-md-left">
+        <div class="col-md-6 text-center text-md-left">
           <h3>want to work at relevance? <br>
             Check out out current vacancies</h3>
         </div>
         <div class="col-md-6 text-right text-center text-md-right mt-4 mt-md-0">
-          <a href="#" class="btn btn-primary">JOB VACANCIES</a>
+          <a href="#" class="btn btn-outline-primary btn-sm">JOB VACANCIES</a>
         </div>
       </div>
     </div>
@@ -278,7 +310,7 @@
     <div class="col-md-6 col-11 mx-auto">
       <div class="qoute-img mx-auto" style="background: url('images/qoute-img.png');"></div>
       <span class="fa fa-quote-left"></span>
-      <h3 class="qoute-bold py-4 mx-auto w-50">THE BEST TEAM IV EVER WORKED WITH!</h3>
+      <h3 class="qoute-bold py-4 mx-auto w-75">relevance are THE BEST TEAM I'VE EVER WORKED WITH!</h3>
       <p class="qoute-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
         been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
         scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
@@ -290,12 +322,8 @@
   <!-- Contact us/work with us -->
   <div class="row no-gutters qoutes text-center mt-5 justify-content-center scroll-fade">
     <div class="col-md-6 col-11 mx-auto">
-      <div class="page-break"></div>
-      <h3 class="qoute-bold py-4 mt-4 mx-auto w-50">WANT TO WORK WITH US ON YOUR NEXT PROJECT?</h3>
-      <p class="qoute-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-        been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-        electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s!</p>
+      <h3 class="qoute-bold py-4 mt-4 mx-auto w-75">WANT TO WORK WITH US ON YOUR NEXT PROJECT?</h3>
+      <p class="qoute-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
       <a href="#" class="btn btn-outline-primary btn-sm mt-5">Contact us</a>
     </div>
   </div>
@@ -303,22 +331,26 @@
   <!-- footer ////////////////////////////////////////////////////////// -->
   <div class="footer">
     <div class="row no-gutters footer-car justify-content-end" id="scene3" style="overflow: hidden;">
-      <div class="col-8 car-wheel" data-depth="0.1"><img class="img-fluid" src="images/footer-car.png"></div>
+      <div class="col-8" data-depth="0.1"><img class="img-fluid" src="images/footer-car.png"></div>
     </div>
     <div class="footer-bg pb-3">
       <div class="container">
         <div class="row">
-          <div class="col-md-4 address mb-3 mb-md-0">
+          <div class="col-md-4">
+            <h2>Relevance</h2>
+          </div>
+          <div class="col-md-3 address mb-3 mb-md-0">
             <h3>relevance web marketing</h3>
-            <p>123 universal drive</p>
-            <p>monaco</p>
+            <p>21 Rue Princesse Caroline,</p>
+            <p>Le Petrel,</p>
+            <p>Monaco 98000</p>
           </div>
-          <div class="col-md-4 contact mb-3 mb-md-0">
+          <div class="col-md-3 contact mb-3 mb-md-0">
             <h3>contact</h3>
-            <p><a href="mailto:email@relevancewebmarketing.com">email@relevancewebmarketing.com</a></p>
-            <p><a href="tel:+440201234567">+44 (0)20 123 4567</a></p>
+            <p><a href="tel:+37797779952">+377 97 77 99 52</a></p>
+            <p><a href="mailto:email@relevancewebmarketing.com">monaco@relevanceweb.com</a></p>
           </div>
-          <div class="col-md-4 socials mb-3 mb-md-0">
+          <div class="col-md-2 socials mb-3 mb-md-0">
             <h3>social</h3>
             <ul class="">
               <li><a href="#"><span class="fa fa-facebook"></span></a></li>
@@ -326,7 +358,7 @@
               <li><a href="#"><span class="fa fa-instagram"></span></a></li>
             </ul>
           </div>
-          <div class="col-12 mt-4 pt-1">
+          <div class="col-12 my-2 text-right">
             <p class="rights">"relevance" is a registered trademark of relevance web marketing</p>
           </div>
         </div>
@@ -338,6 +370,7 @@
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="js/vendor/parallax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
@@ -356,6 +389,26 @@
 
     var scene = document.getElementById('scene2');
     var parallaxInstance = new Parallax(scene);
+
+    $('.owl-carousel').owlCarousel({
+      loop:true,
+      nav:true,
+      smartSpeed: 700,
+      autoplay: true,
+      autoplayTimeout: 5000,
+      autoplayHoverPause: true,
+      responsive:{
+          0:{
+              items:1
+          },
+          768:{
+              items:2
+          },
+          992:{
+              items: 3
+          }
+      }
+    });
   </script>
 
 </body>

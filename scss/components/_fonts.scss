@@ -8,13 +8,23 @@
   font-family: futura;
   src: url('fonts/Futura Condensed Regular.ttf');
 }
-/*
+
+// new fonts
+
 @font-face {
-  font-family: akizden;
-  src: url('fonts/Berthold Akzidenz Grotesk Condensed.otf');
+  font-family: kionaSemiBold;
+  src: url('fonts/Kiona-SemiBold.ttf');
 }
 @font-face {
-  font-family: akizden-b;
-  src: url('fonts/AkzidenzGroteskBE-BoldCn.otf');
+  font-family: kionaBold;
+  src: url('fonts/Kiona-Bold.ttf');
 }
-*/
+@font-face {
+  font-family: proxima;
+  src: url('fonts/Proxima-Nova-Thin.otf');
+}
+
+@font-face {
+  font-family: proxima-reg;
+  src: url('fonts/proxima_nova_reg-webfont.ttf');
+}

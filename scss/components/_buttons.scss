@@ -1,7 +1,6 @@
 .btn {
-  font-family: $header-font;
+  font-family: KionaBold;
   text-transform: uppercase;
-  font-weight: normal;
 }
 
 .btn-outline-primary {
@@ -9,13 +8,15 @@
   letter-spacing: 1.5px;
   border: none;
   position: relative;
+  color: #fff;
+  box-shadow: none!important;
   @include media-breakpoint-down(md){
     font-size: 16px;
   }
   
   &:after {
     @extend %pseudo-content;
-    background: theme-color('primary');
+    background: #fff;
     border-radius: 10px;
     z-index: -1;
     -webkit-transform: scale(0.95);
@@ -26,7 +27,7 @@
   }
   &:before {
     @extend %pseudo-content;
-    border: 2px solid theme-color('secondary');
+    border: 2px solid #fff;
     border-radius: 10px;
     z-index: -1;
     -webkit-transform: scale(1);
@@ -35,6 +36,8 @@
     transition: all 0.15s;
   }
   &:hover {
+    background: #fff;
+    color: #5d2b86;
     &:after {
       -webkit-transform: scale(1.1);
               transform: scale(1.1);
@@ -46,14 +49,27 @@
       opacity: 0;
     }
   }
+  &:focus, &:active {
+    background: #fff!important;
+    color: #5d2b86;
+  }
 }
 
 .btn-outline-primary.btn-sm {
   font-size: 18px;
   padding: 12px 60px;
+  color: #5d2b86;
+  border: 3px solid #2996b7;
+  border-radius: 10px;
   @include media-breakpoint-down(md){
     padding: 12px 30px;
     font-size: 16px;
+  }
+
+  &:hover, &:focus, &:active {
+    background: #5d2b86!important;
+    color: #fff!important;
+    border-color: #5d2b86!important;
   }
 }
 
@@ -62,6 +78,7 @@
   letter-spacing: 1px;
   font-weight: normal;
   padding: 15px 80px;
+  
 }
 
 .btn-secondary {

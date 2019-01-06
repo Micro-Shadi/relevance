@@ -8,8 +8,8 @@ $enable-rounded: true;
 
 /* Fonts & typograpthy */
 $font-size-base: 1rem;
-$font-family-base: 'Gentium Basic', serif;
-$header-font: futura-m;
+$font-family-base: proxima-reg;
+$header-font: kionaSemiBold;
 $futura-font: futura;
 $akizden-bold: futura-m;
 $akizden-normal: futura;
@@ -19,7 +19,7 @@ $border-radius-base: 10px;
 $text-color: theme-color('secondary');
 
 
-$headings-font-family: $header-font;
+$headings-font-family: kionaBold;
 $h1-font-size: 28px;
 $h2-font-size: 26px;
 $h3-font-size: 24px;
