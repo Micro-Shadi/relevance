@@ -570,16 +570,17 @@ h2.case-studies-header {
     letter-spacing: 2px;
     color: #5d2b86;
   }
-  .fa.fa-quote-left {
+  .quote-left {
     display: block;
-    font-size: 130px;
-    color: transparentize(theme-color('primary'), 0.8);
+    font-size: 300px;
+    font-family: kionaBold;
+    color: #d4eaf1;
     position: relative;
-    margin: 30px auto -120px;
+    margin: -70px auto -320px;
     z-index: -1;
   }
   .qoute-text {
-    font-size: 14px;
+    font-size: 14px;    
     color: #959595;
     text-align: center;
     @supports (text-align-last: center) {
