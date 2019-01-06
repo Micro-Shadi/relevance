@@ -120,6 +120,7 @@
     font-size: 12px;
     color: #959595;
     line-height: 1.6;
+    text-align: justify;
   }
 }
 
@@ -457,6 +458,7 @@ h2.case-studies-header {
     &:after {
       @extend %pseudo-content;
       background: linear-gradient( transparent, #2c0b47);
+      width: 101%;
       @supports (mix-blend-mode: multiply) {
         mix-blend-mode: multiply;
       }
