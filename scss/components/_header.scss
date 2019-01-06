@@ -183,10 +183,14 @@
   width: 100%;
   height: 100%;
   background-position: center 10%!important;
+  @media screen and (min-width: 1400px) {
+    background-size: cover!important;
+  }
 }
 .intro-layer .layer.watermark {
   background-repeat: no-repeat!important;
   background-position: right!important;
+  background-size: auto!important;
   height: 900px;
   right: 0;
   left: auto!important;
