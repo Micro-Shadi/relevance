@@ -1,9 +1,5 @@
 .service-intro-parag {
   position: relative;
-  background: url('../images/flower-bg.png') no-repeat;
-  background-position: right top;
-  padding-top: 150px;
-  margin-top: -150px!important;
   @include media-breakpoint-down(sm){
     background: none;
   }
@@ -47,7 +43,7 @@
       display: flex;
       position: relative;
       font-family: $akizden-bold;
-      font-size: 38px;
+      font-size: 36px;
       letter-spacing: 6px;
       width: 335px;
       height: 115px;
@@ -62,7 +58,7 @@
       &:before {
         @extend %pseudo-content;
         z-index: -1;
-        background: #c8a82c;
+        background: theme-color('primary');
 
         @supports(mix-blend-mode: multiply) {
           mix-blend-mode: multiply;

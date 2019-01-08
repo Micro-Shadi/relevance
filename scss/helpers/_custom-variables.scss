@@ -1,6 +1,6 @@
 /* General variable styles */
 $theme-colors: (
-  "primary": #c8a82c,
+  "primary": #5d2b86,
   "secondary": #5e6a81
 );
 $enable-rounded: true;
@@ -11,8 +11,8 @@ $font-size-base: 1rem;
 $font-family-base: proxima-reg;
 $header-font: kionaSemiBold;
 $futura-font: futura;
-$akizden-bold: futura-m;
-$akizden-normal: futura;
+$akizden-bold: kionaBold; //futura-m
+$akizden-normal: kionaSemiBold; //futura
 $raleway: 'Raleway', sans-serif;
 $line-height-base: 1.4;
 $border-radius-base: 10px;

@@ -55,7 +55,7 @@
       
       p.name {
         font-family: $akizden-bold;
-        font-size: 16px;
+        font-size: 15px;
         letter-spacing: 2px;
         text-transform: uppercase;
       }
@@ -64,6 +64,7 @@
         font-size: 12px;
         letter-spacing: 2px;
         text-transform: uppercase;
+        color: lighten(theme-color('primary'), 30%)!important;
       }
     }
   } //hover
@@ -126,6 +127,7 @@
 
   .btn-outline-secondary {
     letter-spacing: 1px;
+    font-size: 18px;
   }
 
   .text {
@@ -134,7 +136,7 @@
     
     p.name {
       font-family: $akizden-bold;
-      font-size: 16px;
+      font-size: 15px;
       letter-spacing: 2px;
       text-transform: uppercase;
     }

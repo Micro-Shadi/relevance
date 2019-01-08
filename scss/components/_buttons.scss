@@ -156,3 +156,13 @@
     }
   }
 }
+
+.btn-click-here {
+  border: 2px solid #5d2b86;
+  color: #5d2b86;
+
+  &:hover {
+    background: #5d2b86;
+    color: #fff;
+  }
+}

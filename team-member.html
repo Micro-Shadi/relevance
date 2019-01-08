@@ -8,6 +8,15 @@
   <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
   <link rel="dns-prefetch" href="//ajax.googleapis.com">
   <link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com">
+  <!-- favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#603cba">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
 
   <!-- CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -28,7 +37,7 @@
   <!-- Header & intro /////////////////////////////////////////////////////////////////////////////// -->
   <div class="intro">
     <div class="intro-layer">
-      <div class="layer" style="background: url('images/team-member-bg.jpg');"></div>
+      <div class="layer sub-pages-overlay" style="background: url('images/team-member-bg.jpg');"></div>
     </div>
     <div class="intro-content">
 
@@ -39,7 +48,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark" data-toggle="sticky-onscroll">
           <div class="container">
             <!-- logo -->
-            <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="relevance."></a>
+            <a class="navbar-brand" href="index.html"><p>RELEVANCE</p></a>
 
             <!-- toggle button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -53,24 +62,25 @@
                 <li class="nav-item active">
                   <a class="nav-link text-uppercase" href="index.html">Home</a>
                 </li>
-                <li class="nav-item active">
-                  <a class="nav-link text-uppercase" href="index.html">About</a>
+                <li class="nav-item">
+                  <a class="nav-link text-uppercase" href="about.html">About</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item">
                   <a class="nav-link text-uppercase" href="index.html">Academy</a>
                 </li>
-                <li class="nav-item active">
-                  <a class="nav-link text-uppercase" href="index.html">Services</a>
+                <li class="nav-item">
+                  <a class="nav-link text-uppercase" href="services.html">Services</a>
                 </li>
-                <li class="nav-item active">
-                  <a class="nav-link text-uppercase" href="index.html">Case Studies</a>
+                <li class="nav-item">
+                  <a class="nav-link text-uppercase" href="case-studies.html">Case Studies</a>
                 </li>
-                <li class="nav-item active">
-                  <a class="nav-link text-uppercase" href="index.html">Contact</a>
+                <li class="nav-item">
+                  <a class="nav-link text-uppercase" href="contact.html">Contact</a>
                 </li>
-                <li class="nav-item active">
-                  <a class="nav-link french-flag" href="#"><img src="images/fre-flag.jpg" alt="french flag" data-toggle="tooltip"
-                      data-placement="right" title="French"></a>
+                <li class="nav-item lang">
+                  <a class="nav-link" href="#">EN</a>
+                  <span></span>
+                  <a class="nav-link" href="#">FR</a>
                 </li>
               </ul>
             </div>
@@ -88,7 +98,6 @@
             <a href="#" class="btn btn-outline-primary mt-4">contact rumble</a>
           </div>
           <div class="col-12 text-center experts mb-3">
-            <h3 class="mb-0 mt-5 mt-lg-0 mb-lg-5">Experts in Luxury.</h3>
             <div class="page-break"></div>
           </div>
         </div>
@@ -108,7 +117,7 @@
   <!-- team member infos -->
   <div class="container member-info mt-4">
     <div class="row justify-content-center align-items-center">
-      <div class="col-md-5 text-center text-md-right">
+      <div class="col-md-5 text-center">
         <img src="images/member.jpg" class="img-fluid">
       </div>
       <div class="col-md-5 pl-3 pl-md-5 mt-5 mt-md-5 about-member">
@@ -161,8 +170,7 @@
 
   <!-- Contact us/work with us -->
   <div class="row no-gutters qoutes text-center mt-5 justify-content-center scroll-fade">
-    <div class="col-md-6 col-11 mx-auto">
-      <div class="page-break"></div>
+    <div class="col-md-8 col-11 mx-auto">
       <h3 class="qoute-bold py-4 mx-auto w-50 mt-4">WANT TO WORK WITH US ON YOUR NEXT PROJECT?</h3>
       <p class="qoute-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
         been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
@@ -177,23 +185,27 @@
 
   <!-- footer ////////////////////////////////////////////////////////// -->
   <div class="footer">
-    <div class="row no-gutters footer-car justify-content-end" id="scene3" style="overflow: hidden;">
-      <div class="col-8 car-wheel" data-depth="0.1"><img class="img-fluid" src="images/footer-car.png"></div>
+    <div class="row no-gutters footer-car justify-content-end" style="overflow: hidden;">
+      <div><img class="img-fluid" src="images/footer-car.png"></div>
     </div>
     <div class="footer-bg pb-3">
       <div class="container">
         <div class="row">
-          <div class="col-md-4 address mb-3 mb-md-0">
+          <div class="col-md-4">
+            <h2>Relevance</h2>
+          </div>
+          <div class="col-md-3 address mb-3 mb-md-0">
             <h3>relevance web marketing</h3>
-            <p>123 universal drive</p>
-            <p>monaco</p>
+            <p>21 Rue Princesse Caroline,</p>
+            <p>Le Petrel,</p>
+            <p>Monaco 98000</p>
           </div>
-          <div class="col-md-4 contact mb-3 mb-md-0">
+          <div class="col-md-3 contact mb-3 mb-md-0">
             <h3>contact</h3>
-            <p><a href="mailto:email@relevancewebmarketing.com">email@relevancewebmarketing.com</a></p>
-            <p><a href="tel:+440201234567">+44 (0)20 123 4567</a></p>
+            <p><a href="tel:+37797779952">+377 97 77 99 52</a></p>
+            <p><a href="mailto:email@relevancewebmarketing.com">monaco@relevanceweb.com</a></p>
           </div>
-          <div class="col-md-4 socials mb-3 mb-md-0">
+          <div class="col-md-2 socials mb-3 mb-md-0">
             <h3>social</h3>
             <ul class="">
               <li><a href="#"><span class="fa fa-facebook"></span></a></li>
@@ -201,7 +213,7 @@
               <li><a href="#"><span class="fa fa-instagram"></span></a></li>
             </ul>
           </div>
-          <div class="col-12 mt-4 pt-1">
+          <div class="col-12 my-2 text-right">
             <p class="rights">"relevance" is a registered trademark of relevance web marketing</p>
           </div>
         </div>
