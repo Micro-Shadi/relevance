@@ -1,0 +1,251 @@
+.courses {
+  position: relative;
+  .courses-bg {
+    position: absolute;
+    background: url('../../images/courses-bg.jpg');
+    background-size: cover;
+    height: 1150px;
+    top: 150px;
+    width: 100%;
+
+    @extend %edge-top;
+    @extend %edge-bottom;
+  }
+  .courses-con {
+
+    h2 {
+      font-size: 20px;
+      margin-bottom: 70px;
+    }
+  }
+  .course-item { 
+    background: #fff;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.4);
+
+    .course-img {
+      height: 235px;
+      background-size: cover!important;
+      background-position: center!important;
+    }
+    
+    .course-text {
+      padding: 25px 25px 30px;
+      h3 {
+        font-size: 18px;
+      }
+      p {
+        font-size: 12px;
+        margin-top: 20px;
+        text-align: justify;
+        text-align-last: center;
+      }
+      .btn-outline-primary {
+        margin-top: 20px;
+        border: 2px solid #959595;
+        color: theme-color('primary');
+        padding: 10px 40px;
+        font: 15px kionaBold;
+        letter-spacing: 0.5px;
+
+        &:hover, &:active, &:focus {
+          border: 2px solid theme-color('primary')!important;
+          background: theme-color('primary')!important;
+          color: #fff!important;
+        }
+      }
+    }
+  }
+}
+
+// after learning 
+.after-learning {
+  margin-top: 130px;
+  @include media-breakpoint-down(md){
+    margin-top: 50px;
+  }
+  h3 {
+    font-size: 24px;
+    color: #fff;
+    letter-spacing: 2px;
+    @include media-breakpoint-down(md){
+      color: theme-color('primary');
+    }
+  }
+
+
+  .num-item {
+    flex: 0 0 33.33%;
+    color: #fff;
+    @include media-breakpoint-down(lg){
+      color: theme-color('primary');
+    }
+  }
+  .break {
+    position: relative;
+    width: 1px;
+    height: 150px;
+    background: lighten(theme-color('primary'), 30%);
+    top: 30px;
+    right: 35px;
+    @include media-breakpoint-down(lg){
+      display: none;
+    }
+
+    &.break2 {
+      right: 14px;
+    }
+  }
+  .counter-value {
+    vertical-align: top;
+    display: inline-block;
+    font-size: 130px;
+    font-family: kionaBold;
+    width: 150px;
+    @include media-breakpoint-down(lg){
+      width: 100px;
+      font-size: 90px;
+    }
+    @include media-breakpoint-down(md){
+      width: 80px;
+      font-size: 70px;
+    }
+    @include media-breakpoint-down(sm){
+      width: 80px;
+      font-size: 70px;
+      width: 100%;
+      text-align: center;
+    }
+  }
+  .num-right {
+    display: inline-block;
+    span {
+      font-size: 70px;
+      position: relative;
+      top: 31px;
+      @include media-breakpoint-down(lg){
+        font-size: 50px;
+        top: 22px;
+      }
+      @include media-breakpoint-down(md){
+        font-size: 50px;
+        top: 13px;
+      }
+      @include media-breakpoint-down(sm){
+        display: block;
+        font-size: 75px;
+        top: -35px;
+        text-align: center;
+        width: 100%;
+      }
+    }
+    p {
+      font: 15px kionaBold;
+      width: 190px;
+      position: relative;
+      top: 10px;
+      @include media-breakpoint-down(lg){
+        width: 180px;
+      }
+      @include media-breakpoint-down(md){
+        width: 140px;
+        font-size: 12px;
+      }
+      @include media-breakpoint-down(sm){
+        width: 100%;
+        font-size: 12px;
+        top: -55px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+// university
+.university {
+  margin-top: 150px;
+  @include media-breakpoint-down(md){
+    margin-top: 50px;
+  }
+  position: relative;
+  background: #f6f6f6;
+
+  .left {
+    padding: 50px;
+    h4 {
+      margin-top: 15px;
+      text-align: left;
+      font: 22px kionaBold;
+    }
+  }
+  
+}
+
+// partners
+.guest {
+  .guest-img {
+    background-size: cover!important;
+    background-position: center;
+    width: 170px;
+    height: 170px;
+  }
+}
+
+// academy shout
+.academy-shout {
+  h2 {
+    font: 55px kionaBold;
+    color: theme-color('primary');
+    letter-spacing: 5px;
+    @include media-breakpoint-down(md) {
+      font-size: 30px;
+    }
+
+    span {
+      color: #5e6a81;
+    }
+  }
+}
+
+// quotes-slider
+.quotes-slider {
+  position: relative;
+
+  h3 {
+    font-size: 20px;
+    margin: 100px 0 50px 0;
+  }
+
+  .quotes-images {
+    .img {
+      height: 570px;
+      background-size: cover!important;
+      background-position: top center!important;
+    }
+  }
+
+  .quotes-text {
+    position: absolute;
+    top: 76px;
+    left: 0;
+    
+    .quote {
+      height: 570px;
+      margin: 0 auto;
+    }
+
+    span {
+      color: lighten(theme-color('primary'), 45%);
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+    p {
+      font-family: kionaSemiBold;
+      font-size: 24px;
+      color: #fff;
+    }
+    p.b {
+      margin-top: 20px;
+      color: lighten(theme-color('primary'), 45%);
+    }
+  }
+}
