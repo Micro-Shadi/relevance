@@ -160,6 +160,7 @@ var map = AmCharts.makeChart("chartdiv", {
     "selectedScale": 1.5,
     "selectedColor": "#c6a526",
     "color": "#c45614",
+    "centered": false
   },
 
   "areasSettings": {
@@ -169,7 +170,14 @@ var map = AmCharts.makeChart("chartdiv", {
 
   "dataProvider": {
     "map": "worldLow",
+    "areas": [{
+        "id": "LT",
+        "showAsSelected": true
+      }],
+    "groupId": "myCustomid",
     "images": [{
+      "id": "myCustomid",
+      "groupId": "myCustomid",
       "svgPath": targetSVG,
       "zoomLevel": 5,
       "scale": 0.5,
