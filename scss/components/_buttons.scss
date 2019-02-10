@@ -13,7 +13,7 @@
   @include media-breakpoint-down(md){
     font-size: 16px;
   }
-  
+
   &:after {
     @extend %pseudo-content;
     background: #fff;
@@ -164,5 +164,23 @@
   &:hover {
     background: #5d2b86;
     color: #fff;
+  }
+}
+
+.btn-apply {
+  border: 3px solid #2996b7;
+  border-radius: 10px;
+  padding: 12px 25px;
+  width: 280px;
+  text-align: center;
+  font: 17px kionaBold;
+  letter-spacing: 2px;
+  margin: 0 auto;
+  color: theme-color('primary');
+
+  &:hover {
+    background: theme-color('primary');
+    color: #fff;
+    border-color: theme-color('primary');
   }
 }

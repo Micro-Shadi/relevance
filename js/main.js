@@ -231,3 +231,4 @@ var map = AmCharts.makeChart("chartdiv", {
     "enabled": false
   }
 });
+

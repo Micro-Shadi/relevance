@@ -1,0 +1,91 @@
+.tab-navigation { margin-bottom:40px; }
+.tab-content {}
+
+
+.see-positions {
+  .see-positions-in {
+    font: 20px kionaBold;
+    color: theme-color('primary');
+  }
+  select {
+    border: 3px solid #2996b7;
+    border-radius: 10px;
+    padding: 12px 25px;
+    width: 480px;
+    font: 17px kionaBold;
+    letter-spacing: 2px;
+    color: theme-color('primary');
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxMjkgMTI5IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMjkgMTI5IiB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4Ij4KICA8Zz4KICAgIDxwYXRoIGQ9Im0xMjEuMywzNC42Yy0xLjYtMS42LTQuMi0xLjYtNS44LDBsLTUxLDUxLjEtNTEuMS01MS4xYy0xLjYtMS42LTQuMi0xLjYtNS44LDAtMS42LDEuNi0xLjYsNC4yIDAsNS44bDUzLjksNTMuOWMwLjgsMC44IDEuOCwxLjIgMi45LDEuMiAxLDAgMi4xLTAuNCAyLjktMS4ybDUzLjktNTMuOWMxLjctMS42IDEuNy00LjIgMC4xLTUuOHoiIGZpbGw9IiM5OTc1YjMiLz4KICA8L2c+Cjwvc3ZnPgo=) no-repeat 95%;
+    transition: all .25s;
+    @include media-breakpoint-down(md){
+      width: 350px;
+      margin: 0 auto;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  select::-ms-expand {
+    display: none; /* remove default arrow on ie10 and ie11 */
+  }
+  @media screen and (min-width:0\0) {
+    select {
+        background:none\9;
+        padding: 5px\9;
+    }
+  }
+
+  .card {
+    border-bottom: 2px solid #2996b7;
+    padding: 25px;
+  }
+
+  .card-title {
+    display: inline-block;
+    font: 20px kionaBold;
+    color: theme-color('primary');
+    letter-spacing: 2px;
+    transition: all 0.25s;
+    @include media-breakpoint-down(md){
+      font-size: 14px;
+      letter-spacing: 0;
+    }
+
+    &:hover {
+      color: lighten(theme-color('primary'), 20%);
+      cursor: pointer;
+    }
+  }
+
+  .card-body {
+    text-align: center;
+    font: 12px proxima-reg;
+    line-height: 18px;
+    color: #898989;
+
+    p {
+      text-align: justify;
+      padding-top: 25px;
+    }
+  }
+}
+
+.accordion .card-header:after {
+  font-family: kionabold, 'FontAwesome';
+  content: "Show less \f077";
+  font-size: 15px;
+  color: #9975b3;
+  float: right;
+  cursor: pointer;
+  @include media-breakpoint-down(md){
+    font-size: 14px;
+    letter-spacing: 0;
+  }
+}
+.accordion .card-header.collapsed:after {
+  /* symbol for "collapsed" panels */
+  content: "View details & Apply \f054";
+}
