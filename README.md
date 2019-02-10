@@ -12,3 +12,4 @@ https://micro-shadi.github.io/relevance/case-studies.html <br>
 https://micro-shadi.github.io/relevance/contact.html <br>
 https://micro-shadi.github.io/relevance/academy.html <br>
 https://micro-shadi.github.io/relevance/office.html <br>
+https://micro-shadi.github.io/relevance/vacancies.html <br>

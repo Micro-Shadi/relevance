@@ -75,7 +75,7 @@
 
 .accordion .card-header:after {
   font-family: kionabold, 'FontAwesome';
-  content: "Show less \f077";
+  content: "Show less \f106";
   font-size: 15px;
   color: #9975b3;
   float: right;
@@ -87,5 +87,5 @@
 }
 .accordion .card-header.collapsed:after {
   /* symbol for "collapsed" panels */
-  content: "View details & Apply \f054";
+  content: "View details & Apply \f105";
 }
