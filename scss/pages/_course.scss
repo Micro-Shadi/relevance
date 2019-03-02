@@ -1,0 +1,213 @@
+.course-intro {
+  h3 {
+    font-size: 30px;
+    color: theme-color('primary');
+    letter-spacing: 3px;
+  }
+  p.qoute-text {
+    font-size: 18px;
+    color: #898989;
+    line-height: 28px;
+  }
+  ul {
+    margin-top: 80px;
+    @include media-breakpoint-down(md) {
+      margin-top: 50px;
+    }
+  }
+  ul li {
+    position: relative;
+    text-align: left;
+    flex: 0 0 50%;
+    padding: 25px 90px;
+
+    span {
+      position: absolute;
+      left: 70px;
+      top: 27px;
+      font-size: 13px;
+      color: theme-color('primary');
+    }
+    p {
+      text-transform: uppercase;
+      font-size: 12px;
+      font-family: proxima-reg;
+    }
+
+    @include media-breakpoint-down(md) {
+      padding: 15px 50px;
+      span {
+        left: 30px;
+        top: 17px;
+      }
+    }
+    @include media-breakpoint-down(sm) {
+      flex: 0 0 100%;
+    }
+  }
+  .btn-sm {
+    margin-top: 80px;
+    @include media-breakpoint-down(md) {
+      margin-top: 50px;
+    }
+  }
+}
+
+/* courses */
+.courses {
+  margin-top: 120px;
+  h3 {
+    color: theme-color('primary');
+    font-size: 30px;
+    letter-spacing: 2px;
+  }
+
+  .head {
+    background: #411e5d;
+    color: #fff;
+    padding: 20px 10px;
+
+    h4 {
+      font-size: 30px;
+      letter-spacing: 4px;
+    }
+    p {
+      font-size: 12px;
+      letter-spacing: 1px;
+    }
+
+    &:after {
+      content: '';
+      display: inline-block;
+      border: 30px solid transparent;
+      margin-left: -28px;
+      border-top-color: #411e5d;
+      position: absolute;
+      margin-top: 16px;
+    }
+
+    &.lighter-bg {
+      background: #9975b3;
+      &:after {
+        border-top-color: #9975b3;
+      }
+    }
+  }
+  .schedule {
+    margin-top: 70px;
+    p.time {
+      font-size: 12px;
+      font-weight: bold;
+      color: theme-color('primary');
+      margin-top: 15px;
+    }
+    p.details {
+      font-size: 12px;
+    }
+  }
+}
+
+.course-session {
+  margin-top: 100px;
+
+  h3 {
+    color: theme-color('primary');
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+  p {
+    margin-top: 20px;
+    font-size: 12px;
+  }
+}
+
+.course-icons {
+  p {
+    font-size: 18px;
+    font-family: kionaBold;
+    color: #2996b7;
+    letter-spacing: 2px;
+    line-height: 22px;
+  }
+}
+
+/* what i get at the end of the course */
+.what-i-get {
+  h3 {
+    font-size: 20px;
+    color: theme-color('primary');
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+  }
+
+  p {
+    border-bottom: 2px solid #2996b7;
+    padding: 10px;
+    font-size: 18px;
+    color: #898989;
+    &:last-child {
+      border: none;
+    }
+  }
+}
+
+/* partner */
+.partner.course-partner {
+  h3 {
+    font-size: 20px;
+  }
+}
+
+.course-shout-out {
+  font-size: 80px;
+  color: theme-color('primary');
+  letter-spacing: 12px;
+  line-height: 95px;
+
+  @include media-breakpoint-down(md){
+    font-size: 50px;
+    line-height: 70px;
+  }
+  @include media-breakpoint-down(sm){
+    font-size: 35px;
+  }
+}
+
+/* courses 2 */
+.courses2 {
+  h3 {
+    font-size: 20px;
+  }
+  .schedule {
+    p.details {
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 38px;
+    }
+  }
+}
+
+.apply-sub-text {
+  color: theme-color('primary');
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+
+.other-courses {
+  h2 {
+    letter-spacing: 2px;
+  }
+  &.courses .course-item {
+    box-shadow: none;
+  }
+  h3 {
+    font-size: 20px!important;
+  }
+  .course-text .btn-outline-primary {
+    border-color: #2996b7!important;
+    margin-top: 30px!important;
+  }
+}
